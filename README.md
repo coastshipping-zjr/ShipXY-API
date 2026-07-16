@@ -43,6 +43,7 @@ In the traditional approach, the whole process has to rely on manually comparing
 ## 3.1 API Documentation
 Here's the official link to Boat News： https://www.shipxy.com/  
 The official Chain API introduction page of Chuanxun is： https://my.feishu.cn/wiki/GxF2w6cZHisQiEkBRatcoIqlnfc  
+sdk https://my.feishu.cn/wiki/FGUAwCMVGiHYZQkHTv6cA7ZUnrf  
 
 We can get the following information
 | Interface Name | Request URL | Request Method |
