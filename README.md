@@ -259,6 +259,62 @@ if __name__ == "__main__":
         print(json.dumps(api_data[0], indent=4, ensure_ascii=False)[:1000])
 ```
 
+Key information of the structure sent to the API
+
+```json
+{
+    "url": "https://api.shipxy.com/apicall/v3/GetManyShip",
+    "method": "GET",
+    "headers": {
+        "User-Agent": "python-requests/2.x.x",
+        "Accept": "*/*"
+    },
+    "params": {
+        "key": "YOUR_API_KEY_HERE",
+        "mmsis": "413961925,477232800,477172700,413000113"
+    }
+}
+```
+
+Key information of the structure returned by the API
+
+```json
+{
+    "status": 0,
+    "msg": "Success",
+    "data": [
+        {
+            "mmsi": 413961925,
+            "imo": 0,
+            "call_sign": "XY01",
+            "ship_name": "ZHEN DONG 813",
+            "ship_cnname": "振东813",
+            "lat": 22.2854,
+            "lng": 114.1577,
+            "heading": 180,
+            "course": 180.5,
+            "speed": 10.2,
+            "status": 0,
+            "last_time": "2026-07-16 12:00:00"
+        },
+        {
+            "mmsi": 477232800,
+            "imo": 9123456,
+            "call_sign": "XY02",
+            "ship_name": "ZHI LI 818",
+            "ship_cnname": "智利818",
+            "lat": 22.3120,
+            "lng": 114.1245,
+            "heading": 90,
+            "course": 90.0,
+            "speed": 0.1,
+            "status": 1,
+            "last_time": "2026-07-16 12:05:00"
+        }
+    ]
+}
+```
+
 ## 5 Core Code：Receive and parse latitude and longitude information from the Ship Info API 
 ```Python
 import json
